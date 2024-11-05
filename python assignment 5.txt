@@ -1,0 +1,90 @@
+
+# Discount amount =============================
+
+a=eval(input("enter a no :"))
+disc_1=a*(10/100)
+disc_2=a*(20/100)
+disc_3=a*(30/100)
+disc_4=a*(50/100)
+
+if a<=1000:
+    print(disc_1, a-disc_1)
+elif a>=100 and a<=2000:
+    print(a-disc_2)    
+elif a>=2000 and a<=5000:
+    print(disc_3, a-disc_3)
+elif a>5000:
+    print(disc_4, a-disc_4)    
+
+#check weather the no is posituve or negetive========================
+
+a=int(input("enter a number :"))
+b=int(input("enter a number"))
+c=a-b
+if c>=0:
+    print("poitive no :", c)
+elif c<0:
+    print("negetive no :", c)
+else:
+    print(c)        
+
+#check weather person eligible for vote or not==================
+
+age=int(input("enter age :"))
+if age>=18:
+    print("eligible for vote :", age)
+elif age<18:
+    print("not eligible for vote :")
+else:
+    print("enter valid age")        
+
+#check marks of a subject ===================
+
+marks=eval(input("enter marks :"))
+if marks>= 0 and marks<=100:
+    if marks>=35:
+        print("pass")
+if marks<35:
+    print("fail")
+else:
+    print("enter valid marks")       
+
+## Check weather vowel or consonent================
+
+vowels=['a','e','i','o','u']
+inp=str(input("enter a value :"))
+for ele in inp:
+    if ele in vowels:
+        print("vowel ", inp)
+    else:
+        print("not an vowel")      
+
+# check gender weather male or female==============
+
+a=str(input("enter gender :"))
+if a=='m' or a=='M':
+    print("male")
+elif a=='f' or a=='F':
+    print("female")
+elif (a!='m' or a!='M') and (a!='f' or a!='F'):
+    print("others")
+else:
+    print('not enterd valid gender')
+
+
+day=int(input("enter value :"))
+if day==1:
+    print("monday")
+elif day==2:
+    print("tuesday")
+elif day==3:
+    print("wednesday")
+elif day==4:
+    print("thursday")
+elif day==5:
+    print("friday")
+elif day==6:
+    print("saturday")
+elif day==7:
+    print("sunday")                        
+
